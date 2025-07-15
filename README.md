@@ -21,11 +21,10 @@ Welcome to the Wumpus World AI project, an immersive application showcasing inte
 ## How to Run 🏃‍♂️
 
    ```bash
-   git clone https://github.com/KamruzzamanAsif/Wumpus-World.git
+   git clone https://github.com/pronobkarmoker/Wumpus-World.git
    npm i
    npm run dev
    ```
-## Play the Game Now 🎮
-Experience the Wumpus World AI in action! Play the game live at the [Wumpus World AI Game](https://wumpus-world-ai.netlify.app/)
+
 
 
