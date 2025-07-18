@@ -318,7 +318,7 @@ export class Play {
           this.board[this.agentIndex.row][this.agentIndex.column + 1].replace(
             "W",
             ""
-          );
+          );  
 
         if (this.board[this.agentIndex.row][this.agentIndex.column + 1] == "") {
           this.board[this.agentIndex.row][this.agentIndex.column + 1] = "D";
@@ -369,28 +369,28 @@ export class Play {
       if (
         this.agentIndex.row < 9 &&
         this.pitProbability[this.agentIndex.row + 1][this.agentIndex.column] <
-          this.threshold
+        this.threshold
       ) {
         lessThresholdRandomDirections.push(this.DOWN);
       }
       if (
         this.agentIndex.column < 9 &&
         this.pitProbability[this.agentIndex.row][this.agentIndex.column + 1] <
-          this.threshold
+        this.threshold
       ) {
         lessThresholdRandomDirections.push(this.RIGHT);
       }
       if (
         this.agentIndex.row > 0 &&
         this.pitProbability[this.agentIndex.row - 1][this.agentIndex.column] <
-          this.threshold
+        this.threshold
       ) {
         lessThresholdRandomDirections.push(this.UP);
       }
       if (
         this.agentIndex.column > 0 &&
         this.pitProbability[this.agentIndex.row][this.agentIndex.column - 1] <
-          this.threshold
+        this.threshold
       ) {
         lessThresholdRandomDirections.push(this.LEFT);
       }
@@ -538,10 +538,10 @@ export class Play {
       if (
         this.agentIndex.row > 0 &&
         this.wumpusProbability[this.agentIndex.row - 1][
-          this.agentIndex.column
+        this.agentIndex.column
         ] < this.threshold &&
         this.pitProbability[this.agentIndex.row - 1][this.agentIndex.column] <
-          this.threshold
+        this.threshold
       ) {
         UnvisitedAvailableDirections.push(this.UP);
       }
@@ -550,10 +550,10 @@ export class Play {
       if (
         this.agentIndex.column > 0 &&
         this.wumpusProbability[this.agentIndex.row][
-          this.agentIndex.column - 1
+        this.agentIndex.column - 1
         ] < this.threshold &&
         this.pitProbability[this.agentIndex.row][this.agentIndex.column - 1] <
-          this.threshold
+        this.threshold
       ) {
         UnvisitedAvailableDirections.push(this.LEFT);
       }
@@ -562,10 +562,10 @@ export class Play {
       if (
         this.agentIndex.row < 9 &&
         this.wumpusProbability[this.agentIndex.row + 1][
-          this.agentIndex.column
+        this.agentIndex.column
         ] < this.threshold &&
         this.pitProbability[this.agentIndex.row + 1][this.agentIndex.column] <
-          this.threshold
+        this.threshold
       ) {
         UnvisitedAvailableDirections.push(this.DOWN);
       }
@@ -574,10 +574,10 @@ export class Play {
       if (
         this.agentIndex.column < 9 &&
         this.wumpusProbability[this.agentIndex.row][
-          this.agentIndex.column + 1
+        this.agentIndex.column + 1
         ] < this.threshold &&
         this.pitProbability[this.agentIndex.row][this.agentIndex.column + 1] <
-          this.threshold
+        this.threshold
       ) {
         UnvisitedAvailableDirections.push(this.RIGHT);
       }
@@ -761,7 +761,7 @@ export class Play {
     if (
       this.agentIndex.column < 9 &&
       this.wumpusProbability[this.agentIndex.row][this.agentIndex.column + 1] >
-        0.5
+      0.5
     ) {
       this.shootDirection = this.RIGHT;
       return true;
@@ -769,7 +769,7 @@ export class Play {
     if (
       this.agentIndex.column > 0 &&
       this.wumpusProbability[this.agentIndex.row][this.agentIndex.column - 1] >
-        0.5
+      0.5
     ) {
       this.shootDirection = this.LEFT;
       return true;
@@ -777,7 +777,7 @@ export class Play {
     if (
       this.agentIndex.row < 9 &&
       this.wumpusProbability[this.agentIndex.row + 1][this.agentIndex.column] >
-        0.5
+      0.5
     ) {
       this.shootDirection = this.DOWN;
       return true;
@@ -785,7 +785,7 @@ export class Play {
     if (
       this.agentIndex.row > 0 &&
       this.wumpusProbability[this.agentIndex.row - 1][this.agentIndex.column] >
-        0.5
+      0.5
     ) {
       this.shootDirection = this.UP;
       return true;
